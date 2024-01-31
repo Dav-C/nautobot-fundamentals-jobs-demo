@@ -1,2 +1,1 @@
-
-
+from . import demo_jobs
