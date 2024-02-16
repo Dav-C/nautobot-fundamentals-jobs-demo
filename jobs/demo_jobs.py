@@ -100,7 +100,7 @@ class DemoJob(Job):
             # Check for existing Site
             site = Location.objects.get(name=site_name)
             self.logger.error(
-                message=f"Site {site_name} already exists! Stopping Job!"
+                msg=f"Site {site_name} already exists! Stopping Job!"
             )
         except ObjectDoesNotExist:
             # Create Site if unique
