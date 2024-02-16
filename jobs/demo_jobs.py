@@ -119,4 +119,5 @@ class DemoJob(Job):
                 extra={"object": site}
             )
 
-register_jobs(DemoJob)
+jobs = [DemoJob]
+register_jobs(*jobs)
